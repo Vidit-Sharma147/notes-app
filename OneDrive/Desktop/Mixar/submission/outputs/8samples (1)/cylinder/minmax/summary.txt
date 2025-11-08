@@ -1,0 +1,9 @@
+mesh: samples\8samples (1)\8samples\cylinder.obj
+method: minmax
+n_vertices: 192
+bins: 1024
+MSE: 7.966258421034e-07
+MAE: 6.109481915933e-04
+MSE_per_axis: [1.1949387631550368e-06, 0.0, 1.1949387631550368e-06]
+MAE_per_axis: [0.0009164222873900216, 0.0, 0.0009164222873900216]
+meta: {'vmin': array([-1., -1., -1.]), 'vmax': array([1., 1., 1.])}

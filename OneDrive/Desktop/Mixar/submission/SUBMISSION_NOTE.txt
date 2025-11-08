@@ -1,0 +1,23 @@
+IMPORTANT: Convert Assignment_Report.md to PDF before submission!
+
+The Assignment_Report.md file needs to be converted to PDF format.
+
+Quick conversion options:
+1. Online: Upload to https://www.markdowntopdf.com/
+2. VS Code: Install "Markdown PDF" extension, right-click file -> Export to PDF
+3. Browser: Open in VS Code preview (Ctrl+Shift+V), then Print -> Save as PDF
+
+After converting:
+1. Delete Assignment_Report.md
+2. Add Assignment_Report.pdf
+3. ZIP the entire submission folder
+4. Submit the ZIP file
+
+Current folder contents:
+- scripts/ (2 Python files)
+- outputs/ (all results - meshes, plots, data)
+- README.md (usage instructions)
+- requirements.txt (dependencies)
+- Assignment_Report.md (CONVERT THIS TO PDF!)
+
+Total: 120 files ready for submission
