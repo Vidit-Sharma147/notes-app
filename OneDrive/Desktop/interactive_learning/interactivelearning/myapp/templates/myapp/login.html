@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interact_Learn heaven for bloggers</title>
+    <link rel="stylesheet" href="{% static 'myapp/login.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="{% static 'myapp/logo.png' %}" width="94px" alt=""></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="main.html">Features</a></li>
+                    <li><a href="main.html">About</a></li>
+                    <li><a href="main.html">Contact</a></li>
+                    <li><a href="login.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    
+    <div class="max-width1 m-auto"><hr></div>
+    <div class="page-wrapper">
+    <div class="container">
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" required>
+                    <l class='bx bxs-user'></l>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password">
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#"> Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn"><a href="{% url 'mainlogin' %}">Login</a></button>
+                
+            </form>
+        </div>
+        <div class="form-box register">
+            <form action="#">
+                <h1>SignUp</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn"><a href="{% url 'mainlogin' %}">SignUp</a></button>
+            </form>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Interact_Learn</h2>
+                <p>The heaven for bloggers</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="#">Login/SignUp</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@interactlearn.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Interact_Learn. All rights reserved.
+            <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits</a>
+        </div>
+    </footer>
+
+    <script src="{% static 'myapp/login.js' %}"></script>
+    </body>
+    </html>

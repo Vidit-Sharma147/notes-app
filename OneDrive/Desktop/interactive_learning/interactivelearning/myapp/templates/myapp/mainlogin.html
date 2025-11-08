@@ -1,0 +1,131 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning</title>
+    <link rel="stylesheet" href="{% static 'myapp/mainlogin.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><img src="{% static 'myapp/logo.png' %}" alt="interactive learning"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="{% url 'main' %}">Logout</a></li>
+        </ul>
+       
+    </header>
+    <section>
+    <div class="content max-width-1 m-auto my-2">
+        <div class="content-left">
+            <h1>Welcome!!</h1>
+            <p>This website lets you submit an article which upon approval will be on our website and you can get a good amount of reach from here!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod officia, consequatur quo blanditiis commodi fugiat odio, at tenetur cupiditate suscipit inventore? Tempora quia harum dicta! Natus voluptatem suscipit sequi harum!</p>
+        </div>
+        <div class="content-right">
+            <img src="{% static 'myapp/home.png' %}" alt="Interact_Learn">
+        </div>
+    </div>
+    </section>
+    <!--features-->
+    <section class="features" id="features">
+        <div class="heading">
+            <h1>Browse our <br><span>features</span></h1>
+            <a href="#" class="btn">See All<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <div class="features-container">
+            <!--Box1-->
+            <div class="box">
+                <img src="{% static 'myapp/sudoku.png' %}" alt="">
+                <h2>Sudoku</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!--Box2-->
+            <div class="box">
+                <img src="{% static 'myapp/ai_bot.jpg' %}" alt="">
+                <h2>AI Bot</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!--Box3-->
+            <div class="box">
+                <img src="{% static 'myapp/memory_game.jpg' %}" alt="">
+                <h2>Memory Game</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!--Box4-->
+            <div class="box">
+                <img src="{% static 'myapp/puzzle.png' %}" alt="">
+                <h2>Puzzle</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!--Box5-->
+            <div class="box">
+                <img src="{% static 'myapp/engquiz.jpg' %}" alt="">
+                <h2>English Quiz</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <!--Box6-->
+            <div class="box">
+                <img src="{% static 'myapp/mathsquiz.jpg' %}" alt="">
+                <h2>Maths Quiz</h2>
+                <span>Play around with numbers</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Interactive Learning</h2>
+                <p>Making learning a fun activity</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="#">Login/SignUp</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@interactlearn.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; All rights reserved.
+            <a href="main.html">Interactive Learning</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
