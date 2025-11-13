@@ -8,6 +8,25 @@ This guide walks you through deploying your Flask notes app on Render in simple,
 - ✅ MongoDB Atlas account (free tier works)
 - ✅ Render account (sign up at render.com)
 
+## ⚠️ IMPORTANT: Sensitive Information & Security
+
+### What NOT to Push to GitHub
+❌ **NEVER** commit these to your repository:
+- Database passwords
+- API keys
+- Secret keys
+- Connection strings with real credentials
+- `.env` files with actual values
+
+### How to Handle Secrets Safely
+- Use **environment variables** instead of hardcoding
+- Store secrets in Render's environment settings (not in code)
+- Use `.gitignore` to exclude sensitive files
+- Generate strong, random keys (at least 32 characters)
+
+### Your `.env` File
+Your project includes a `.env` file template. **DO NOT** add real values to it - it's just for local development. The real secrets go in Render's dashboard.
+
 ## 🗄️ Step 1: Set Up Database (MongoDB Atlas)
 
 ### 1. Create Free Database
