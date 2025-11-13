@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: cloud-notes-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SECRET_KEY
+        value: your_secure_random_key_here
+      - key: MONGODB_URI
+        value: mongodb+srv://username:password@cluster.mongodb.net/notes_app

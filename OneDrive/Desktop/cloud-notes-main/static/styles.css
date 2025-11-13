@@ -1,0 +1,39 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background: #4c6ef5;
+}
+
+.note-card {
+    border-radius: 12px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.note-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.add-note-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.note-card small {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.note-card:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
