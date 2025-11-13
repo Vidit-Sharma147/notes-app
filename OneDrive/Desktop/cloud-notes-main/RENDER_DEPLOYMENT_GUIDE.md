@@ -169,10 +169,4 @@ If you can do all that, your app is working! 🎉
 
 ---
 
-## 📞 Need Help?
-
-- Check the logs in Render dashboard
-- Go to [docs.render.com](https://docs.render.com/)
-- MongoDB has good help pages too
-
 **You did it! Your notes app is now on the internet. Follow these steps and you'll be done in minutes.** 🚀
